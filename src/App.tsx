@@ -66,7 +66,6 @@ function App() {
     fetch(showPileLink)
       .then((res) => res.json())
       .then((result) => {
-        console.log(result.piles.your_piles.cards);
         setPileImageLink(result.piles.your_piles.cards);
       });
   };
